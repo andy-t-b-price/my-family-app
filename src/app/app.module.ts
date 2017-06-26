@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -9,6 +10,9 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { BillsComponent } from './bills/bills.component';
 import { GiftsComponent } from './gifts/gifts.component';
+import { HomeComponent } from './home/home.component';
+import { AuthComponent } from './auth/auth.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,16 @@ import { GiftsComponent } from './gifts/gifts.component';
     CalendarComponent,
     ShoppingComponent,
     BillsComponent,
-    GiftsComponent
+    GiftsComponent,
+    HomeComponent,
+    AuthComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
